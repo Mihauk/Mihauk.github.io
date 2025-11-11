@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Google Scholar">
+  <title>Google Scholar</title>
+  <circle cx="256" cy="256" r="256" fill="#4285F4"/>
+  <path fill="#fff" d="M123.8 242.4l132.2-99.5 132.2 99.5-132.2 99.5-132.2-99.5z"/>
+  <path fill="#34A853" d="M256 341.9l132.2-99.5v99.5H256z"/>
+  <path fill="#EA4335" d="M123.8 242.4V342h132.2v-99.6H123.8z"/>
+  <circle cx="256" cy="256" r="40" fill="#FABB05"/>
+  <circle cx="256" cy="256" r="20" fill="#4285F4"/>
+</svg>
