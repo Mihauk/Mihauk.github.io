@@ -152,7 +152,7 @@ body::before {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.25;
+  opacity: 0.45;
   z-index: -1;
   animation: shimmer 18s linear infinite alternate;
   transition: opacity 0.4s ease;
