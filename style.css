@@ -246,6 +246,10 @@ header.hero, main, footer {
   flex-shrink: 0;                /* prevent the image from shrinking */
 }
 
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
 .hero-text {
   flex: 1;                       /* text fills remaining space */
   min-width: 250px;
