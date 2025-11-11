@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhishek Raj | Quantum Physics & Cryptography</title>
+  <meta name="description" content="Abhishek Raj — PhD candidate in Physics. Quantum computing, cryptography, nonlinear dynamics, and many-body physics." />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="icon" href="icons/github.svg">
+</head>
+<body class="dark">
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Abhishek Raj</h1>
+      <h3>Ph.D. Candidate · Theoretical & Quantum Physics · CUNY</h3>
+      <p class="subtitle">Quantum Computing • Cryptography • Nonlinear Dynamics</p>
+      <nav class="buttons" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#news">News</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" title="Toggle dark/light theme" aria-label="Toggle theme">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a theoretical physicist working at the interface of <strong>quantum many-body physics</strong>,
+        <strong>non‑equilibrium statistical mechanics</strong>, and <strong>quantum cryptography</strong>.
+        I build analytical models and high‑performance simulations to study nonlinear diffusion, jamming,
+        and quantum information protocols. Recently, I’ve been developing hardware‑oriented implementations
+        of Shor’s algorithm for ECC (ECDLP) and exploring quantum error correction and post‑quantum security.
+      </p>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p>
+        My work uncovers emergent transport phenomena in kinetically constrained systems, including
+        non‑perturbative diffusion cascades and jamming transitions. I also study the intersection of
+        many‑body physics and <strong>quantum error correction (QEC)</strong> (quantum LDPC codes, tensor‑network
+        constructions) and pursue quantum cryptanalysis and <strong>PQC</strong>.
+      </p>
+      <p class="inline-links">
+        <a class="btn btn-ghost" href="Research_Statement.pdf" target="_blank" rel="noopener">Read Research Statement ↗</a>
+      </p>
+    </section>
+
+    <!-- Research Timeline -->
+    <section id="timeline" class="section">
+      <h2>Research Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>2025 — Quantum Cryptanalysis & Shor’s Algorithm for ECC</h3>
+            <p>Hardware‑efficient ECDLP circuits in Qiskit: ECC group ops, scalar multiplication, and QFT‑based period finding; lattice post‑processing.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>2024 — Jamming in Kinetically Constrained Models</h3>
+            <p>Triangular‑ladder model with coexisting diffusive and jammed phases; classical–quantum mapping and Hartree–Fock analysis of quasiparticles.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>2023 — Nonlinear Diffusion & Hydrodynamic Cascades</h3>
+            <p>Identified stretched‑exponential relaxation via diffusion cascades; large‑scale simulations and stochastic field theory.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>2021 — Plaquette Ising Model & Dualities</h3>
+            <p>Phase structure under transverse fields; mapping to Quantum Compass model; DMRG and ML‑assisted wavefunction approximations.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>2018 — Many‑Body Localization & Quenches</h3>
+            <p>Localization length distributions, interferometric probes, and integrability diagnostics in disordered spin chains.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <div class="cards">
+        <article class="card">
+          <h4>Length scales in the many-body localized phase and their spectral signatures</h4>
+          <p><em>Phys. Rev. B 100, 115136</em></p>
+          <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.115136" target="_blank" rel="noopener">Read Paper</a>
+        </article>
+        <article class="card">
+          <h4>Diffusion cascade in a model of interacting random walkers</h4>
+          <p><em>arXiv:2412.05222</em></p>
+          <a href="https://arxiv.org/pdf/2412.05222" target="_blank" rel="noopener">Read Paper</a>
+        </article>
+        <article class="card">
+          <h4>A kinetically constrained model exhibiting non-linear diffusion and jamming</h4>
+          <p><em>J. Stat. Mech. (2025) 073208</em></p>
+          <a href="https://iopscience.iop.org/article/10.1088/1742-5468/aded6b" target="_blank" rel="noopener">Read Paper</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Highlighted Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h4>Quantum Attack on Elliptic Curve Cryptography</h4>
+          <p>Qiskit implementation of Shor’s ECDLP with ECC group ops, QFT, and lattice post‑processing.</p>
+          <a href="https://github.com/AbhishekRaj/ECC" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h4>Nonlinear Diffusion Simulations</h4>
+          <p>GPU‑accelerated lattice‑gas simulations to study hydrodynamic cascades and jamming.</p>
+          <a href="https://github.com/AbhishekRaj/NLD" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h4>Cloud Security Learning Path</h4>
+          <p>Security & cryptography modules using a modern web stack.</p>
+          <a href="https://github.com/AbhishekRaj/MUN-Security" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h4>Quantum Machine Learning Experiments</h4>
+          <p>Hybrid QML algorithms combining Qiskit and PyTorch for kernel estimation and VQCs.</p>
+          <a href="https://github.com/AbhishekRaj/QML" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <h2>News & Updates</h2>
+      <ul class="news">
+        <li><strong>Nov 2025:</strong> Building hardware‑oriented circuits for Shor’s ECDLP; integrating QFT and lattice post‑processing.</li>
+        <li><strong>Jul 2025:</strong> J. Stat. Mech. paper on non‑linear diffusion & jamming published.</li>
+        <li><strong>Dec 2024:</strong> Preprint on diffusion cascades in interacting random walkers posted to arXiv.</li>
+      </ul>
+    </section>
+
+    <section id="cv" class="section">
+      <h2>Curriculum Vitae</h2>
+      <p>You can download my full CV below.</p>
+      <div class="cv-links">
+        <a class="btn" href="CV_Araj.pdf" target="_blank" rel="noopener">📄 Download CV (PDF)</a>
+        <a class="btn btn-ghost" href="Research_Statement.pdf" target="_blank" rel="noopener">📘 Research Statement</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-row">
+        <a class="icon-link" href="mailto:abhishek654r@gmail.com" aria-label="Email">
+          <img src="icons/mail.svg" alt="" /> Email
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/abhishek-raj-605b309a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="icons/linkedin.svg" alt="" /> LinkedIn
+        </a>
+        <a class="icon-link" href="https://github.com/AbhishekRaj" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="icons/github.svg" alt="" /> GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Abhishek Raj · Built with ❤️ using GitHub Pages</p>
+  </footer>
+</body>
+</html>
