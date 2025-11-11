@@ -222,40 +222,48 @@ header.hero, main, footer {
 }
 
 /* --- Profile photo beside name --- */
+/* --- Balanced asymmetric hero layout --- */
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;   /* align content from the left */
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2.5rem;                   /* more space between photo and text */
   text-align: left;
+  max-width: 900px;              /* limit overall width */
+  margin: 0 auto;                /* center whole group in page */
+  padding: 2rem 1rem;
 }
 
-/* --- Profile picture circular crop --- */
+/* Keep the circular image */
 .profile-pic {
-  width: 160px;                /* adjust size */
-  height: 160px;
-  border-radius: 50%;          /* makes it circular */
-  object-fit: cover;           /* crop instead of squish */
-  object-position: center;     /* keep focus centered */
-  display: block;
-  margin: 0 auto;              /* center horizontally if needed */
-  border: 3px solid rgba(255,255,255,0.8);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.9);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  flex-shrink: 0;                /* prevent the image from shrinking */
 }
 
-.profile-pic:hover {
-  transform: scale(1.05);
+.hero-text {
+  flex: 1;                       /* text fills remaining space */
+  min-width: 250px;
 }
 
 .hero-text h1 {
+  font-size: 2.3rem;
   margin-bottom: 0.3rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .hero-content {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    margin-bottom: 1rem;
   }
 }
