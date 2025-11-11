@@ -187,3 +187,16 @@ header.hero {
 body::before {
   z-index: -2; /* keep parallax below canvas */
 }
+
+
+/* -------- Fade-in on Scroll -------- */
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

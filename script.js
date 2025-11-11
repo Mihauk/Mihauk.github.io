@@ -71,3 +71,19 @@ function draw() {
   requestAnimationFrame(draw);
 }
 draw();
+
+
+// ---- Fade-In on Scroll ----
+const fadeSections = document.querySelectorAll('.section');
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+fadeSections.forEach(sec => {
+  sec.classList.add('fade-section');
+  fadeObserver.observe(sec);
+});
